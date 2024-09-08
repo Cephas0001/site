@@ -585,6 +585,140 @@ h2 {
   color: #4CAF50;
   margin-right: 10px;
 }
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #fff; /* Logo text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Logo font size */
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal layout */
+}
+
+.navbar-menu li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+.navbar-menu a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for better spacing */
+}
+
+.navbar-menu a:hover {
+    background-color: #555; /* Hover background color */
+    border-radius: 4px; /* Rounded corners */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar-menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image covers the container */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        font-size: 14px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 
 
@@ -598,11 +732,25 @@ h2 {
         <img src="https://i.imgur.com/TAN04fH.jpg" alt="Ose-Bonsu Cephas Profile" class="profile-img">
         <h1>OSEI-BONSU CEPHAS</h1>
         <h2>Electrical Engineer</h2>
-        <p>I am drawn to majoring in Electronics, with a specific focus on Intelligent Robotics and Environmental Sustainability. My goal is to leverage this expertise to drive positive change in two critical sectors: transportation and environmental sustainability. I envision developing innovative robotic systems that transform transportation by enhancing safety, efficiency, and sustainability through autonomous vehicles and intelligent traffic management. Furthermore, I aim to design cutting-edge sensors for monitoring climate change and air quality, as well as autonomous systems for environmental monitoring, optimize resource usage, and promote eco-friendly practices harnessing the power of robotics to protect our planet, ensure a sustainable future, and improve the quality of life for generations to come.
+        <p>Passionate about Electronics, focusing on Intelligent Robotics & Environmental Sustainability. Driving positive change in transportation & sustainability through innovative robotic systems, autonomous vehicles & intelligent traffic management. Developing cutting-edge sensors for climate change & air quality monitoring, and autonomous systems for environmental optimization. Harnessing robotics to protect our planet & ensure a sustainable future for generations to come<p>
         </p>
         <a href="#projects" class="btn">View My Projects</a>
     </div>
 </header>
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#home" class="navbar-logo">INNOVATEX</a>
+        <ul class="navbar-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#video-demonstration">Video Demonstration</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 <section id="about" class="about-section">
     <div class="container">
