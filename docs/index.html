@@ -8,85 +8,105 @@
     <title>INNOVATEX - Ose-Bonsu Cephas's Portfolio</title>
     <style>/* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333; /* Default text color */
-            background-color: #f5f5f5; /* Light background to improve readability */
-        }
-        
-        header {
-            background: url('../images/background.jpg') no-repeat center center/cover;
-            height: 100vh;
-            position: relative;
-            color: white;
-        }
-        
-        .header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7); /* Darker overlay to enhance text contrast */
-        }
-        
-        .header .intro {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        
-        .header .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-            border: 3px solid white;
-        }
-        
-        .header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        
-        .header h2 {
-            font-size: 1.5em;
-            margin: 10px 0 20px;
-        }
-        
-        .header p {
-            max-width: 600px;
-            margin: 0 auto 20px;
-            line-height: 1.5;
-            color: #ddd; /* Lighter text for better readability */
-        }
-        
-        .header .btn {
-            background: #f39c12;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        
-        .header .btn:hover {
-            background: #e67e22;
-        }
-        
-        section {
-            padding: 50px;
-            max-width: 1200px;
-            margin: 0 auto;
-            color: #333; /* Ensure text is dark and readable */
-            background-color: #ffffff; /* White background for sections */
-            border-radius: 10px; /* Smooth edges for better aesthetics */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-        
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    background-color: #f5f5f5; /* Light background to improve readability */
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darkens the image for better text contrast */
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header .intro {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header .profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.header p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 1em;
+    color: #ddd; /* Lighter text for better readability */
+}
+
+.header .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333; /* Ensure text is dark and readable */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 10px; /* Smooth edges for better aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
         h2 {
             text-align: center;
             margin-bottom: 30px;
@@ -339,27 +359,17 @@ header.header {
     text-decoration: underline;
 }
 .about-section {
-    padding: 60px;
+    padding: 60px 20px;
     background-color: #f9f9f9;
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
     text-align: center;
 }
 
 .about-section h2 {
-    font-size: 3em;
-    color: #333;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
-.intro-text {
+.about-section .intro-text {
     font-size: 1.2em;
     line-height: 1.8;
     margin-bottom: 40px;
@@ -368,18 +378,18 @@ header.header {
 
 .content-flex {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    justify-content: center;
 }
 
 .content-block {
-    flex-basis: 45%;
+    flex-basis: 100%;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .content-block h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: #f39c12;
     margin-bottom: 20px;
 }
@@ -387,17 +397,12 @@ header.header {
 .content-block ul {
     list-style: none;
     padding: 0;
-    font-size: 1.2em;
-    color: #666;
 }
 
 .content-block ul li {
     margin-bottom: 10px;
-}
-
-.content-block ul li i {
-    color: #f39c12;
-    margin-right: 10px;
+    font-size: 1.2em;
+    color: #666;
 }
 
 .contact-info {
