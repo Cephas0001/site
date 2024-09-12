@@ -338,31 +338,38 @@ a:hover {
     }
 }
 /* Research Paper Section */
-#research-paper {
-    background-color: #f9f9f9;
-    padding: 40px 10px; /* Reduce padding to extend closer to edges on mobile */
-    font-family: Arial, sans-serif;
+.research-paper-section {
+  width: 100vw; /* Full viewport width */
+  padding: 0 5vw; /* Consistent padding with About section */
+  box-sizing: border-box;
 }
 
-.research-container {
-    max-width: 100%; /* Ensure it uses full width on mobile */
-    margin: 0;
-    background-color: #ffffff;
-    padding: 20px; /* Adjust padding */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.research-paper-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-    .research-container {
-        padding: 20px 10px; /* Adjust padding to fill mobile screen */
-    }
+@media (min-width: 768px) {
+  .research-paper-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .diagram {
-        max-width: 100%; /* Make diagrams cover full width */
-    }
+  .research-paper-section img {
+    width: 48%; /* Two images side-by-side on tablets and above */
+    margin-bottom: 10px;
+  }
 }
 
+@media (max-width: 767px) {
+  .research-paper-section img {
+    width: 100%; /* Full-width images on mobile */
+    margin-bottom: 15px;
+  }
+}
 
 #contact {
     background-color: #f9f9f9;
@@ -510,15 +517,15 @@ footer p {
 
     <!-- Background Image -->
     <div class="background-img">
-        <img src="https://img.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_53876-129770.jpg?t=st=1726087473~exp=1726091073~hmac=484ad6080dc150b17021fb9b2ce15345bcdf18120ae90c7da8167dd72b8c3c06&w=996" alt="Background Image" class="background-img">
+        <img src="https://sweagro.com/wp-content/uploads/2024/06/AdobeStock_728648201-scaled.jpg" alt="Background Image" class="background-img">
     </div>
 
     <!-- Profile Section -->
     <div class="profile-container">
         <img src="https://imgur.com/TAN04fH.png" alt="Profile Picture" class="profile-pic">
-        <h1>Osei-Bonsu Cephas</h1>
+        <h1>Ose-Bonsu Cephas</h1>
         <h2>Major: Electrical Engineer</h2>
-        <p>Passionate about Electronics, focusing on Intelligent Robotics & Environmental Sustainability. Driving positive change in transportation & sustainability through innovative robotic systems, autonomous vehicles & intelligent traffic management. Developing cutting-edge sensors for climate change & air quality monitoring, and autonomous systems for environmental optimization. Harnessing robotics to protect our planet & ensure a sustainable future for generations to come</p>
+        <p>I am drawn to Electronics, with a specific focus on Intelligent Robotics and Environmental Sustainability. My goal is to leverage my expertise to drive positive change in two critical sectors: transportation and environmental sustainability. I envision developing innovative robotic systems that transform transportation by enhancing safety, efficiency, and sustainability through autonomous vehicles and intelligent traffic management.</p>
         <p><strong>Contact:</strong> cephasoseib001@gmail.com</p>
     </div>
 
