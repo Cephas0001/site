@@ -337,119 +337,32 @@ a:hover {
         padding: 10px;
     }
 }
+/* Research Paper Section */
 #research-paper {
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 40px 10px; /* Reduce padding to extend closer to edges on mobile */
     font-family: Arial, sans-serif;
 }
 
 .research-container {
-    max-width: 100%; /* Ensure full width on mobile */
-    margin: 0 auto;
+    max-width: 100%; /* Ensure it uses full width on mobile */
+    margin: 0;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px; /* Adjust padding */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Text and heading styles */
-h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #444;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Research link styling */
-.research-link {
-    display: block;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    margin: 20px auto;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.research-link:hover {
-    background-color: #0056b3;
-}
-
-/* Image and diagram styles */
-.diagram {
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* References styling */
-.references ul {
-    list-style-type: disc;
-    padding: 0 20px;
-}
-
-.references ul li {
-    font-size: 0.95rem;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.references ul i {
-    font-style: italic;
-}
-
-/* Future work section */
-.future-work {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-}
-
-/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
     .research-container {
-        padding: 20px; /* Adjust padding on mobile */
-        max-width: 100%; /* Ensure container fits screen width */
-    }
-
-    h2 {
-        font-size: 2rem; /* Smaller heading size on mobile */
-    }
-
-    h3 {
-        font-size: 1.25rem; /* Smaller sub-heading size */
-    }
-
-    p {
-        font-size: 0.95rem; /* Adjust paragraph size for readability */
+        padding: 20px 10px; /* Adjust padding to fill mobile screen */
     }
 
     .diagram {
-        max-width: 100%; /* Ensure diagrams are responsive */
-    }
-
-    .research-link {
-        padding: 10px 15px; /* Adjust button padding on mobile */
+        max-width: 100%; /* Make diagrams cover full width */
     }
 }
+
 
 #contact {
     background-color: #f9f9f9;
@@ -540,66 +453,57 @@ h2 {
     background-color: #0056b3;
 }
 /* Footer Section */
-footer {
-  background-color: hsl(199, 53%, 74%);
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border-left: 5px solid hsl(211, 100%, 50%); /* Blue accent like previous sections */
-}
-
 .footer-container {
-  text-align: center;
-  padding: 10px 20px; /* Reduce padding to make the footer shorter */
-  background-color: #f9f9f9; /* Optional: Add background color */
+    text-align: center;
+    width: 100%; /* Extend full width */
+    padding: 10px 0;
 }
 
 .social-media {
-  display: flex;
-  justify-content: center;
-  gap: 15px; /* Adjust gap for spacing between icons */
-  margin-bottom: 5px; /* Reduce bottom margin */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 .social-link {
-  display: inline-block;
+    display: inline-block;
 }
 
 .social-icon {
-  width: 35px; /* Adjust icon size to make it more compact */
-  height: 35px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 footer p {
-  font-size: 0.85em; /* Adjust font size */
-  color: #050505;
-  margin-top: 5px; /* Reduce top margin */
+    font-size: 0.9em;
+    color: #050505;
 }
 
 /* Responsive layout for footer */
 @media screen and (max-width: 768px) {
-  .social-media {
-    flex-direction: row; /* Keep icons in a row for mobile */
-    gap: 10px; /* Reduce gap on mobile */
-  }
+    .social-media {
+        flex-direction: row; /* Keep icons in a single row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        gap: 10px;
+    }
 
-  .social-icon {
-    width: 40px; /* Increase icon size slightly for mobile */
-    height: 40px;
-  }
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
 
-  footer p {
-    font-size: 0.8em; /* Make the font a bit smaller for mobile */
-  }
+    .footer-container {
+        padding: 5px 10px; /* Reduce padding on mobile */
+    }
 }
-
 
 </style>
 <body>
