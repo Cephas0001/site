@@ -338,37 +338,113 @@ a:hover {
     }
 }
 /* Research Paper Section */
-.research-paper-section {
-  width: 100vw; /* Full viewport width */
-  padding: 0 5vw; /* Consistent padding with About section */
-  box-sizing: border-box;
+#research-paper {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
 
-.research-paper-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.research-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
-  .research-paper-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
 
-  .research-paper-section img {
-    width: 48%; /* Two images side-by-side on tablets and above */
+h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
     margin-bottom: 10px;
-  }
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Research Paper Link */
+.research-link {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.research-link:hover {
+    background-color: #0056b3;
+}
+
+/* Diagrams - Consistent Sizes Across Devices */
+.diagram {
+    display: block;
+    width: 100%;
+    max-width: 600px; /* Smaller max-width for all devices */
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .diagram {
+        max-width: 500px; /* Slightly smaller on tablet-sized screens */
+    }
 }
 
 @media (max-width: 767px) {
-  .research-paper-section img {
-    width: 100%; /* Full-width images on mobile */
-    margin-bottom: 15px;
-  }
+    .diagram {
+        max-width: 350px; /* Smaller size for mobile screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust heading size on mobile */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Future Work and References Sections */
+.future-work {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.references ul {
+    list-style-type: disc;
+    padding: 0 20px;
+}
+
+.references ul li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.references ul i {
+    font-style: italic;
 }
 
 #contact {
