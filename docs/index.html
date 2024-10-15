@@ -620,6 +620,59 @@ footer p {
     font-size: 16px;
     color: #333; /* Darker gray for readability */
 }
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-left: 5px solid #007bff; /* Blue accent on the left */
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Styling for individual projects */
+.project-item {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #projects {
+        padding: 20px;
+    }
+
+    .project-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
 
 
 </style>
@@ -635,7 +688,7 @@ footer p {
         <img src="https://imgur.com/TAN04fH.png" alt="Profile Picture" class="profile-pic">
         <h1>Osei-Bonsu Cephas</h1>
         <h2>Major: Electrical Engineering</h2>
-        <p>I am drawn to Electronics, with a specific focus on Intelligent Robotics and Environmental Sustainability. My goal is to leverage my expertise to drive positive change in two critical sectors: transportation and environmental sustainability. I envision developing innovative robotic systems that transform transportation by enhancing safety, efficiency, and sustainability through autonomous vehicles and intelligent traffic management.</p>
+        <p>I am drawn to majoring in Electronics, with a specific focus on Intelligent Robotics and Environmental Sustainability. My goal is to leverage this expertise to drive positive change in two critical sectors: transportation and environmental sustainability. I envision developing innovative robotic systems that transform transportation by enhancing safety, efficiency, and sustainability through autonomous vehicles and intelligent traffic management. Furthermore, I aim to design cutting-edge sensors for monitoring climate change and air quality, as well as autonomous systems for environmental monitoring, optimize resource usage, and promote eco-friendly practices harnessing the power of robotics to protect our planet, ensure a sustainable future, and improve the quality of life for generations to come.</p>
         <p><strong>Contact:</strong> cephasoseib001@gmail.com</p>
     </div>
 
@@ -644,6 +697,21 @@ footer p {
         <h2>About Me</h2>
         <p>I’m Osei-Bonsu Cephas, a proud General Science graduate from Konongo Odumase Senior High School. Curiosity has always been my compass, guiding me to explore the unknown and challenge myself to uncover the ‘why’ behind everything I encounter. With an unquenchable thirst for knowledge, I see every day as an opportunity to learn and grow. As a passionate tech enthusiast, I’m driven by a bigger purpose: to harness the power of technology in ways that protect our planet and ensure a sustainable future for generations to come</p>
     </div>
+   
+    <!-- About Me Section -->
+    <div class="about-me">
+        <h2>My purpose, my journey</h2>
+        <p>Life is not just about carving out your own journey, but about helping others discover the beauty and hope in theirs. From a young age, I have been driven by a deep calling to serve those who face overwhelming obstacles, to lift up those who feel left behind. It’s not enough for me to simply witness the world’s injustices; I am determined to confront them, to offer a hand to those who need it most, and to help people realize their own strength in the face of adversity.
+
+            Whether I’m designing systems that bring real change, organizing fundraisers, or providing essential resources to those who are often overlooked, my purpose is always the same: to make life better for others. I believe that even the smallest acts of kindness and innovation can spark hope, and that hope can transform lives.
+            
+            I have always put the needs of others above my own, not because it’s easy, but because I know that by doing so, I’m contributing to something bigger than myself. With every project I take on, with every effort I make, I hold onto the belief that a better world is possible, if we each take responsibility to shape it.
+            
+            My dream is to continue helping, learning, adapting, and creating solutions that not only push the boundaries of technology but also touch hearts. I want to inspire others to see the hope that exists even in the darkest moments and to use my knowledge and passion to drive real, lasting change. I don’t just dream of a better world—I’m committed to building it.
+            
+            </p>
+    </div>
+
 
     <!-- Interests Section -->
     <div class="interests">
@@ -697,26 +765,34 @@ footer p {
                 <p>I aim to build systems that can mitigate changes in weather conditions, monitor air quality, and provide solutions to protect the planet and generations to come.</p>
             </div>
             <div class="plan-section">
-                <h3>2. Improving Telemedicine and Renewable Energy</h3>
+                <h3>2. Storm-Driven Energy Capture Systems</h3>
+                <p> I want to build Wind Energy Harvesters: Traditional wind turbines are ineffective in hurricanes due to extreme wind speeds, but specialized, durable turbines could be developed to withstand these conditions and harness the wind's energy at scale. These turbines will be:
+
+                1.Stronger and more flexible than traditional turbines to endure violent gusts.
+                2.Designed to shut down in extreme conditions to avoid damage, with a fail-safe to restart after the worst of the storm passes.
+                3.Possibly placed offshore or in storm-prone regions for maximum energy capture.</p>
+            </div>
+            <div class="plan-section">
+                <h3>3. Improving Telemedicine and Renewable Energy</h3>
                 <p>My goal is to improve telemedicine infrastructure and develop renewable energy solutions to ensure hospitals have a sustainable power supply, improving healthcare outcomes.</p>
             </div>
             <div class="plan-section">
-                <h3>3.Disaster Preparedness and Recovery</h3>
+                <h3>4.Disaster Preparedness and Recovery</h3>
                 <p> I aim to design disaster-resilient energy systems that ensure power supply during natural disasters. This includes setting up off-grid power 
                     solutions like solar and wind energy that continue functioning when centralized grids are disrupted.</p>
             </div>
             <div class="plan-section">
-                <h3>3.Food Security and Automation in Agriculture</h3>
+                <h3>5.Food Security and Automation in Agriculture</h3>
                 <p>Precision Agriculture: Making Robos, drones, and IoT sensors that can be deployed in farming to create precision agriculture systems. These systems use data on soil quality, weather,
                      and crop health to optimize irrigation, fertilization, and pesticide use, reducing resource consumption while increasing yields</p>
             </div>
             <div class="plan-section">
-                <h3>4.Sustainable Transportation</h3>
+                <h3>6.Sustainable Transportation</h3>
                 <p> developement of EVs and their charging infrastructure. Automated battery 
                     management systems ensure optimal performance and longevity, reducing the carbon footprint of transportation.</p>
             </div>
             <div class="plan-section">
-                <h3>5.Biodiversity Loss and Habitat Destruction</h3>
+                <h3>7.Biodiversity Loss and Habitat Destruction</h3>
                 <p>Conservation Drones: Drones equipped with sensors can be used for wildlife monitoring and habitat protection. These drones can track endangered species, 
                     monitor illegal deforestation, and assess environmental changes over time.</p>
             </div>
@@ -761,15 +837,13 @@ footer p {
             <div class="certification-category">
                 <h3>Course completion and problem solving</h3>
                 <div class="certificate">
-                    <img src="https://i.imgur.com/nY3UxIU.jpeg" alt="Development & Advanced
-                    Engineering Job Simulation">
+                    <img src="https://i.imgur.com/nY3UxIU.jpeg" alt="DEVELOPMENT AND ADVANCED ENGINEERING">
                     <div class="certificate-info">
-                        <h4><i class="fas fa-medal"></i> DEVELOPMENT AND ADVANCED ENGINEERING</h4>
+                        <h4><i class="fas fa-medal"></i>DEVELOPMENT AND ADVANCED ENGINEERING</h4>
                         <p>Awarded for completing and soving a challenge in Object-Oriented Programming (OOP), Code Refactoring, Continuous Integration (CI), and
                             Agile Planning, in Development & Advanced Engineering Job Simulation </p>
                     </div>
                 </div>
-        </div>
     </section>
     
     <!-- Projects Section -->
@@ -791,7 +865,7 @@ footer p {
         <div class="project">
             <img src="https://imgur.com/OobbkJ2.jpg" alt="Automatic Water Dispenser" class="project-img">
             <h3>Automatic Water Dispenser</h3>
-            <p>During COVID-19, I created an automated water dispenser for my school, providing a safe, touchless handwashing experience. By eliminating shared tap contact, I helped prevent virus transmission, potentially saving thousands of students' lives. Observing shared tap risks, I built this vital solution to preserve our school community's health and well-being, promoting a safer environment for all, and safeguarding against future pandemics.</p>
+            <p>During COVID-19, I created an automated water dispenser for my school, providing a safe, touchless handwashing experience. By eliminating shared tap contact, I helped prevent virus transmission, potentially save-guarding 900+ students' lives. Observing shared tap risks, I built this vital solution to preserve our school community's health and well-being, promoting a safer environment for all, and safeguarding against future pandemics.</p>
         </div>
 
         <div class="project">
@@ -885,6 +959,28 @@ footer p {
                 </div>
             </div>
         </div>
+        <div id="projects">
+            <h2>My Projects</h2>
+        
+            <div class="project-item">
+                <h3>Smart Dustbin</h3>
+                <p>An innovative dustbin to help keep the library tidy.</p>
+                <a href="https://github.com/Cephas0001/CODES/blob/main/CODES%20FOR%20ALL%20MY%20PROJECTS/DUSTBIN/DUSTBIN.ino" class="project-button">View Code on GitHub</a>
+            </div>
+        
+            <div class="project-item">
+                <h3>Smart Door</h3>
+                <p>A smart door using RFID for access control.</p>
+                <a href="https://github.com/Cephas0001/CODES/blob/main/CODES%20FOR%20ALL%20MY%20PROJECTS/SMART_DOOR/SMART_DOOR.ino" class="project-button">View Code on GitHub</a>
+            </div>
+        
+            <div class="project-item">
+                <h3>Smoke Detector</h3>
+                <p>A smoke detector system designed for safety.</p>
+                <a href="https://github.com/Cephas0001/CODES/blob/main/CODES%20FOR%20ALL%20MY%20PROJECTS/SMOKE_DETECTOR/safehaven.ino" class="project-button">View Code on GitHub</a>
+            </div>
+        </div>
+        
         <section id="research-paper">
             <div class="research-container">
                 <h2>Smart Shoe System for Obstacle Detection and Guidance</h2>
@@ -940,6 +1036,8 @@ footer p {
                 </div>
             </div>
         </section>
+     
+        
         <section id="contact">
             <div class="contact-container">
                 <h2>Contact Me</h2>
